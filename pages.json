@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/fabu/fabu",
+			"style": {
+				"navigationBarTitleText": "发布任务"
+			}
+		},
+		{
+			"path": "pages/jieshou/jieshou",
+			"style": {
+				"navigationBarTitleText": "接收任务"
+			}
+		},
+		{
+			"path": "pages/wode/wode",
+			"style": {
+				"navigationBarTitleText": " 我的任务" 
+			}
+		},
+		{
+			"path": "pages/xx/xx",
+			"style": {
+				"navigationBarTitleText": " 消息" 
+			}
+		},
+		{
+			"path": "pages/qt/qt",
+			"style": {
+				"navigationBarTitleText": " 其他" 
+			}
+		}
+	],
+	"tabBar": {
+	        "color": "#8F8F94",
+	        "selectedColor": "#000000",
+	        "borderStyle": "black",
+	        "backgroundColor": "#ffffff",
+	        "height": "50px",
+	        "fontSize": "10px",
+	        "iconWidth": "24px",
+	        "spacing": "3px",
+	        "list": [{
+	            "pagePath": "pages/fabu/fabu",
+	            "text": "发布任务",
+				"iconPath":"static/img/xbj/as/gaitubao_45_10_jpg.jpg",
+				"selectedIconPath":"static/img/xbj/as/gaitubao_45_10_jpg.jpg"
+	        }, {
+	            "pagePath": "pages/jieshou/jieshou",
+	            "text": "接收任务",
+				"iconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg",
+				"selectedIconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg"
+	        },{
+	            "pagePath": "pages/wode/wode",
+	            "text": "我的任务",
+				"iconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg",
+				"selectedIconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg"
+	        },
+			{
+			    "pagePath": "pages/xx/xx",
+			    "text": "消息",
+				"iconPath":"static/img/xbj/as/gaitubao_45_07_jpg.jpg",
+				"selectedIconPath":"static/img/xbj/as/gaitubao_45_07_jpg.jpg"
+			},
+			{
+			    "pagePath": "pages/qt/qt",
+			    "text": "其他",
+				"iconPath":"static/img/xbj/as/gaitubao_56_13_jpg.jpg",
+				"selectedIconPath":"static/img/xbj/as/gaitubao_56_13_jpg.jpg"
+			}
+			],
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+
+}
+}

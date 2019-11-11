@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/denglu/denglu"
+  ],
+  "subPackages": [],
+  "tabBar": {
+    "textColor": "#8F8F94",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "name": "首页",
+        "icon": "static/logo.png",
+        "activeIcon": "static/img/xbj/home-act.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "name": "新闻",
+        "icon": "static/logo.png",
+        "activeIcon": "static/img/xbj/home-act.png"
+      },
+      {
+        "pagePath": "pages/denglu/denglu",
+        "name": "登录",
+        "icon": "static/logo.png",
+        "activeIcon": "static/img/xbj/home-act.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

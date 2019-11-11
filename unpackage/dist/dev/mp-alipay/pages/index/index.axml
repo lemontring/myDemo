@@ -1,0 +1,1 @@
+<view class="content"><test vue-id="1" onVueInit="__l">我是首页</test>{{''+"Msea"+''}}<view>{{msg}}</view><view>{{msg+"Msea"}}</view><view>{{$root.g0!==-1?"sdf":"df"}}</view></view>

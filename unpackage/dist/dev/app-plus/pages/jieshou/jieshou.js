@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"jsBox { background: #C0C0C0; }\n",],undefined,{path:"./pages/jieshou/jieshou.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/jieshou/jieshou.wxml') } }));

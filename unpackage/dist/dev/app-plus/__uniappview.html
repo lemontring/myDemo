@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"text_uniapp","entryPagePath":"pages/fabu/fabu.html","page":{"pages/fabu/fabu.html":{"window":{"navigationBarTitleText":"发布任务","usingComponents":{}}},"pages/jieshou/jieshou.html":{"window":{"navigationBarTitleText":"接收任务","usingComponents":{}}},"pages/wode/wode.html":{"window":{"navigationBarTitleText":" 我的任务","usingComponents":{}}},"pages/xx/xx.html":{"window":{"navigationBarTitleText":" 消息","usingComponents":{}}},"pages/qt/qt.html":{"window":{"navigationBarTitleText":" 其他","usingComponents":{}}}},"global":{"window":{}},"tabBar":{"color":"#8F8F94","selectedColor":"#000000","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/fabu/fabu.html","text":"发布任务","iconPath":"static/img/xbj/as/gaitubao_45_10_jpg.jpg","selectedIconPath":"static/img/xbj/as/gaitubao_45_10_jpg.jpg"},{"pagePath":"pages/jieshou/jieshou.html","text":"接收任务","iconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg","selectedIconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg"},{"pagePath":"pages/wode/wode.html","text":"我的任务","iconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg","selectedIconPath":"static/img/xbj/as/gaitubao_5_18_jpg.jpg"},{"pagePath":"pages/xx/xx.html","text":"消息","iconPath":"static/img/xbj/as/gaitubao_45_07_jpg.jpg","selectedIconPath":"static/img/xbj/as/gaitubao_45_07_jpg.jpg"},{"pagePath":"pages/qt/qt.html","text":"其他","iconPath":"static/img/xbj/as/gaitubao_56_13_jpg.jpg","selectedIconPath":"static/img/xbj/as/gaitubao_56_13_jpg.jpg"}],"position":"bottom","height":"50px","fontSize":"10px","iconWidth":"24px","spacing":"3px","globalStyle":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/fabu/fabu","pages/jieshou/jieshou","pages/wode/wode","pages/xx/xx","pages/qt/qt"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.3.7","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>
